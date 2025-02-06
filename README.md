@@ -81,12 +81,7 @@ GET /api/classify-number?number={number}
 }
 ```
 
-## Testing
 
-Run the test suite:
-```bash
-npm test
-```
 
 ## Deployment
 
@@ -102,11 +97,8 @@ npm run build
 npm start
 ```
 
-Common deployment platforms:
-- Heroku
-- DigitalOcean
-- AWS Elastic Beanstalk
-- Google Cloud Platform
+Deployment platforms:
+- Render
 
 ## Project Structure
 

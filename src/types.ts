@@ -8,6 +8,6 @@ export interface NumberResponse {
 }
 
 export interface ErrorResponse{
-    error:true,
+    error:boolean,
     number:string
 }

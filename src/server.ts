@@ -25,7 +25,7 @@ app.get('/api/classify-number', async (req: Request<{}, {}, {}, NumberQuery>, re
   if (isNaN(num)) {
     const errorResponse: ErrorResponse = {
       number: number,
-      error: true
+      error: true,
     };
     return res.status(400).json(errorResponse);
   }
@@ -48,7 +48,7 @@ app.get('/api/classify-number', async (req: Request<{}, {}, {}, NumberQuery>, re
       is_perfect: isPerfect(num),
       properties,
       digit_sum: getDigitSum(num),
-      fun_fact: funFact
+      fun_fact: funFact,
     };
 
     res.json(response);
@@ -61,7 +61,7 @@ app.get('/api/classify-number', async (req: Request<{}, {}, {}, NumberQuery>, re
       is_perfect: isPerfect(num),
       properties: [num % 2 === 0 ? 'even' : 'odd'],
       digit_sum: getDigitSum(num),
-      fun_fact: `${num} is a number`
+      fun_fact: `${num} is a number`,
     };
     res.json(response);
   }
